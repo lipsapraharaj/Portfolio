@@ -448,11 +448,10 @@ nav{
         left: calc(35% + 140px);
     }
     .content .name{
-        font-size: 27px;
-    }
-    .des{
+        font-size: 27px,
         color:black;
     }
+   
 }
 
 /* ==================================About=================================== */
