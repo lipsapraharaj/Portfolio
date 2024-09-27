@@ -338,47 +338,11 @@
         <div class="des short">In this project, I developed an online art gallery management system 
             that allows users to explore and purchase artwork with ease. The frontend, built with 
             HTML, CSS, and JavaScript, provides a visually appealing and user-friendly interface for browsing art collections, artist profiles, and detailed descriptions.
-            <span class="more-text"> On the backend, I used PHP to manage user authentication, artwork uploads, and transactional processes, ensuring secure and efficient data handling.</span>
+            On the backend, I used PHP to manage user authentication, artwork uploads, and transactional processes, ensuring secure and efficient data handling.</span>
         </div>
-        <button onclick="toggleDescription(this)">See More</button>
+        <button>See More</button>
     </div>
 </div>
-
-<style>
-  .des {
-      max-height: 60px;
-      overflow: hidden;
-      transition: max-height 0.5s ease;
-  }
-  
-  .des.expand {
-      max-height: 200px; /* Adjust this height according to your content */
-  }
-
-  .more-text {
-      display: none;
-  }
-
-  .des.expand .more-text {
-      display: inline;
-  }
-</style>
-
-<script>
-  function toggleDescription(button) {
-      const description = button.previousElementSibling;
-      const moreText = description.querySelector('.more-text');
-      
-      if (description.classList.contains('expand')) {
-          description.classList.remove('expand');
-          button.textContent = "See More";
-      } else {
-          description.classList.add('expand');
-          button.textContent = "See Less";
-      }
-  }
-</script>
-
         <div class="button">
           <button class="prev"><i class="ri-arrow-left-line"></i></button>
           <button class="next"><i class="ri-arrow-right-line"></i></button>
