@@ -311,25 +311,74 @@
           <div class="item" style="background-image: url(./images/proj2.png);">
             <div class="content">
               <div class="name">JAVA Quiz</div>
-              <div class="des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!</div>
+              <div class="des">This project involved the development of a Java quiz application utilizing Java 
+                Swing for the user interface and JDBC for database connectivity. The application provides an 
+                engaging platform for users to test their knowledge across various topics through 
+                interactive quizzes. Using Java AWT, I designed a responsive layout that ensures an intuitive 
+                user experience. The application features functionalities such as question randomization, score
+                tracking, and user feedback, all while securely managing data through a relational database. 
+                This project showcases my ability to integrate graphical interfaces with backend databases, 
+                delivering a complete and interactive learning tool.</div>
               <button>See More</button>
             </div>
           </div>
           <div class="item" style="background-image: url(./images/proj3.jpg);">
             <div class="content">
               <div class="name">E-commerce Portal</div>
-              <div class="des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!</div>
+              <div class="des">In this project, I developed a feature-rich e-commerce website for 
+                Crate and Barrel, leveraging React for a responsive and dynamic frontend, and Node.js 
+                for a robust backend. The website provides a seamless shopping experience, with functionalities 
+                including product search and filtering. </div>
               <button>See More</button>
             </div>
           </div>
           <div class="item" style="background-image: url(./images/proj4.webp);">
-            <div class="content">
-              <div class="name">Project-4</div>
-              <div class="des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!</div>
-              <button>See More</button>
-            </div>
-          </div>
+    <div class="content">
+        <div class="name">Online Art Gallery Management System</div>
+        <div class="des short">In this project, I developed an online art gallery management system 
+            that allows users to explore and purchase artwork with ease. The frontend, built with 
+            HTML, CSS, and JavaScript, provides a visually appealing and user-friendly interface for browsing art collections, artist profiles, and detailed descriptions.
+            <span class="more-text"> On the backend, I used PHP to manage user authentication, artwork uploads, and transactional processes, ensuring secure and efficient data handling.</span>
         </div>
+        <button onclick="toggleDescription(this)">See More</button>
+    </div>
+</div>
+
+<style>
+  .des {
+      max-height: 60px;
+      overflow: hidden;
+      transition: max-height 0.5s ease;
+  }
+  
+  .des.expand {
+      max-height: 200px; /* Adjust this height according to your content */
+  }
+
+  .more-text {
+      display: none;
+  }
+
+  .des.expand .more-text {
+      display: inline;
+  }
+</style>
+
+<script>
+  function toggleDescription(button) {
+      const description = button.previousElementSibling;
+      const moreText = description.querySelector('.more-text');
+      
+      if (description.classList.contains('expand')) {
+          description.classList.remove('expand');
+          button.textContent = "See More";
+      } else {
+          description.classList.add('expand');
+          button.textContent = "See Less";
+      }
+  }
+</script>
+
         <div class="button">
           <button class="prev"><i class="ri-arrow-left-line"></i></button>
           <button class="next"><i class="ri-arrow-right-line"></i></button>
